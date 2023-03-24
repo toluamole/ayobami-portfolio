@@ -1,9 +1,9 @@
 import { VStack, Image, Heading, Grid, GridItem, Divider } from '@chakra-ui/react';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { images } from '../Constant/Gallery';
-import {  useScroll, useTransform } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+// import {  useScroll, useTransform } from 'framer-motion';
+// import { useInView } from 'react-intersection-observer';
 import { MotionBox } from './SelectedWork';
 
 const lightboxImages = images.map((image)=>{
@@ -16,18 +16,18 @@ export const Gallery = () => {
 		toggler: false,
 		source: ''
 	});
-	const targetRef = useRef<HTMLDivElement>(null);
-	const { ref, inView } = useInView({
-		threshold: 0.3,
-		triggerOnce: false
-	});
-	const {scrollYProgress} = useScroll({
-		target: targetRef,
-		offset: ['start end', 'end end'],
-	});
-	const opacity = useTransform(scrollYProgress, () => {
-		return inView ? 1 : 0;
-	});
+	// const targetRef = useRef<HTMLDivElement>(null);
+	// const { ref, inView } = useInView({
+	// 	threshold: 0.3,
+	// 	triggerOnce: false
+	// });
+	// const {scrollYProgress} = useScroll({
+	// 	target: targetRef,
+	// 	offset: ['start end', 'end end'],
+	// });
+	// const opacity = useTransform(scrollYProgress, () => {
+	// 	return inView ? 1 : 0;
+	// });
 
 	// const navY = useTransform(scrollYProgress,[0.1, 0.7], ['-3%', '3%'] );
 	
@@ -40,7 +40,7 @@ export const Gallery = () => {
 
 	return (
 		<MotionBox 
-			ref={ref} 
+			// ref={ref} 
 			id='Gallery'  
 			// style={{ opacity,  transition: '.2s ease'}} 
 		>

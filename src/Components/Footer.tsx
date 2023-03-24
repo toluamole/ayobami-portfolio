@@ -1,4 +1,4 @@
-import { chakra, Divider, Heading, HStack, Link, Stack, Text } from '@chakra-ui/react';
+import { chakra, Divider, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 export const Footer = () => {
