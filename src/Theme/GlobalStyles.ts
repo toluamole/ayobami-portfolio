@@ -31,6 +31,20 @@ export const GlobalStyles = css`
         src: url('/Fontspring-DEMO-criteriacf-super.otf');
     }
 
+    @font-face {
+        font-family: 'Criteria CF';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/Fontspring-DEMO-criteriacf-super.otf');
+    }
+
+    @font-face {
+        font-family: 'Cosi Azure';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/CosiAzure-Bold.ttf');
+    }
+
 
     ril__caption, .ril__toolbar {
         background-color: transparent;

@@ -4,12 +4,12 @@ import React from 'react';
 export const Fonts = () => (
 	<Global
 		styles={`
-      @font-face {
-        font-family: 'Cosi Azure';
-        font-style: normal;
-        font-weight: 700;
-        src: url("../Fonts/CosiAzure-Bold.ttf") format("truetype");
-      }
+      // @font-face {
+      //   font-family: 'Cosi Azure';
+      //   font-style: normal;
+      //   font-weight: 700;
+      //   src: url("../Fonts/CosiAzure-Bold.ttf") format("truetype");
+      // }
 
       @font-face {
         font-family: 'Maison Neue';

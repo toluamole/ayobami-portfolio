@@ -38,13 +38,18 @@ export const Navigation = ({display}:INavigationProps) => {
 					/>
 				</HStack>
 				{!isLargerThan768 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }} to='#Contact'>
-					<Button
-						fontSize={'14px'}
-						w={'100px'}
-						h={'40px'} bg={'#E54927'}
-						color='#ffffff'
-						_hover={{ 'transform': ' translateY(0.5px)' }}
-					>Say Hello!</Button> 
+					<Link _hover={{ 'textDecoration': 'none' }} >
+						<Button
+							fontSize={'12px'}
+							fontWeight={500}
+							w={'100px'}
+							h={'40px'} bg={'#E54927'}
+							color='#ffffff'
+							_hover={{ 'transform': ' translateY(0.5px)' }}
+						>
+						SAY HELLO
+						</Button>
+					</Link>
 				</Link>}
 				{ isLargerThan768 && <><HStack spacing={10}>
 					<Link as={RLink} to={AppRoutes.home} fontSize={'14px'} fontWeight={500}>HOME</Link>
