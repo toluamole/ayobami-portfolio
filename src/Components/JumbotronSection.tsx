@@ -10,7 +10,7 @@ export const JumbotronSection = () => {
 				<Heading fontSize={['34px','56px']} color={'white'} >A COLLECTION OF DESIGN ARTIFACTS</Heading>
 				<Heading fontSize={['34px','56px']} color={'white'}> MADE WITH LOVE AND PURPOSE</Heading>
 			</VStack>
-			<Stack direction={['column', 'row']} spacing={[10,20]} px={[3, 4]} pb={'90px'}>
+			<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 4]} pb={'90px'}>
 				<Image 
 					cursor={'pointer'} 
 					boxSize={'100%'} 

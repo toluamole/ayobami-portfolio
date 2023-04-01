@@ -12,7 +12,7 @@ import { ISelectedWork } from '../Types/SelectedWorks';
 export const images:ISelectedWork[] = [
 	{
 		id: 0,
-		src: Personify
+		src: Personify,
 	},
 	{
 		id: 1,

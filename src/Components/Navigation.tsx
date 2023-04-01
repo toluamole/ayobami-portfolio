@@ -15,7 +15,7 @@ interface INavigationProps{
 }
 
 export const Navigation = ({display}:INavigationProps) => {
-	const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
+	const [isLargerThan900] = useMediaQuery('(min-width: 900px)');
 	return (
 		<Box
 			py={6}
@@ -37,33 +37,40 @@ export const Navigation = ({display}:INavigationProps) => {
 						bgColor={'#EFC600'}
 					/>
 				</HStack>
-				{!isLargerThan768 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }} to='#Contact'>
-					<Link _hover={{ 'textDecoration': 'none' }} >
-						<Button
-							fontSize={'12px'}
-							fontWeight={500}
-							w={'100px'}
-							h={'40px'} bg={'#E54927'}
-							color='#ffffff'
-							_hover={{ 'transform': ' translateY(0.5px)' }}
-						>
-						SAY HELLO
-						</Button>
-					</Link>
+				{!isLargerThan900 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }} to=''>
+					<Button
+						fontSize={'12px'}
+						fontWeight={500}
+						w={'100px'}
+						h={'40px'} bg={'#E54927'}
+						color='#ffffff'
+						_hover={{ 'transform': ' translateY(0.5px)' }}
+					>
+					SAY HELLO
+					</Button>
 				</Link>}
-				{ isLargerThan768 && <><HStack spacing={10}>
+				{ isLargerThan900 && <><HStack spacing={10}>
 					<Link as={RLink} to={AppRoutes.home} fontSize={'14px'} fontWeight={500}>HOME</Link>
 					<Link  fontSize={'14px'} fontWeight={500}>WORK</Link>
 					<Link  fontSize={'14px'} fontWeight={500}>GALLERY</Link>
 					<Link  fontSize={'14px'} fontWeight={500}>CONTACT</Link>
-				</HStack><Link _hover={{ 'textDecoration': 'none' }} ><Button
+				</HStack>
+				
+				<Button
 					fontSize={'14px'}
 					fontWeight={500}
 					w={'140px'}
 					h={'40px'} bg={'#E54927'}
 					color='#ffffff'
 					_hover={{ 'transform': ' translateY(0.5px)' }}
-				>SAY HELLO</Button> </Link></>}
+				>
+					<Link _hover={{ 'textDecoration': 'none' }} >
+							SAY HELLO
+					</Link>
+						
+				</Button> 
+				</>
+				}
 			</Flex>
 		</Box>
 	);
