@@ -46,7 +46,10 @@ const Project = ({images}:IImagesProps) => {
 	
 	return (
 		<Flex
-			direction={'column'} justifyContent={'center'}>
+			direction={'column'} 
+			justifyContent={'center'}
+			id={'SelectedWork'}
+		>
 			<Flex 
 				w={'auto'}
 				direction={['column','column']}
@@ -117,7 +120,7 @@ const Project = ({images}:IImagesProps) => {
 				>
 					<Stack direction={['row', 'column']} align={['center', 'start']} mb={[4, 0]}>
 						<Text textDecoration={['none','underline']} fontWeight={300} fontSize={['24px','14px']} color={'#ABA8B1'}>{images.index}</Text>
-						<Text fontSize={['24px','30px']} fontWeight={400} color={'#F8F8F8'}>{images.title}</Text>
+						<Heading fontSize={['24px','30px']} fontWeight={400} color={'#F8F8F8'}>{images.title}</Heading>
 					</Stack>
 					<Text fontSize={['14px','18px']} fontWeight={300} w={['auto','500px']} color={'#ABA8B1'}>{images.desc}</Text>
 					<Icon 

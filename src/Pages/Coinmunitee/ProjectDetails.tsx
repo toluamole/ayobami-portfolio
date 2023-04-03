@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Text, Image, Grid, GridItem } from '@chakra-ui/react';
+import { Box, Heading, Stack, Text, Image, Grid, GridItem} from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import clickIcon from '../../Assets/svg/clickIcon.svg';
 import security from '../../Assets/svg/security.svg';
@@ -48,7 +48,7 @@ export const ProjectDetails = () => {
 						Why Coinmunitee is Valuable?
 					</Text>
 				</Stack>
-				<Grid templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)' ]} gap={[10,4]}>
+				<Grid templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)' ]} gap={[10,16]} >
 					<GridItem colSpan={2} >
 						<Stack>
 							<Image w={'40px'} h={'40px'} src={clickIcon}/>

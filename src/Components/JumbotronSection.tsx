@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, VStack, Text, Button, Stack, Link } from '@chakra-ui/react';
+import { Flex, Image, VStack, Text, Button, Stack, Link } from '@chakra-ui/react';
 import React from 'react';
 import profile from '../Assets/image/profile.png';
 import Resume from '../Assets/Ayobami-Adeolu-Resume.pdf';
@@ -7,8 +7,8 @@ export const JumbotronSection = () => {
 	return (
 		<Flex direction={'column'} justifyContent={'center'} alignItems={'center'}>
 			<VStack justify={'center'} align={'center'} my={['50px','90px']}>
-				<Heading fontSize={['34px','56px']} color={'white'} >A COLLECTION OF DESIGN ARTIFACTS</Heading>
-				<Heading fontSize={['34px','56px']} color={'white'}> MADE WITH LOVE AND PURPOSE</Heading>
+				<Text fontSize={['34px','56px']} fontWeight={500} color={'white'} >A COLLECTION OF DESIGN ARTIFACTS</Text>
+				<Text fontSize={['34px','56px']} fontWeight={500} color={'white'}> MADE WITH LOVE AND PURPOSE</Text>
 			</VStack>
 			<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 4]} pb={'90px'}>
 				<Image 

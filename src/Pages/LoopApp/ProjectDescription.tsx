@@ -1,4 +1,4 @@
-import { Box, Divider, Heading, Image, Stack, VStack, Text, BoxProps, HStack } from '@chakra-ui/react';
+import { Box, Divider, Image, Stack, VStack, Text, BoxProps, HStack } from '@chakra-ui/react';
 import React from 'react';
 import { IPageLayoutChild } from '../../Layout/pageLayout';
 import LoopBackground from '../../Assets/image/Loop-background.png';
@@ -21,7 +21,7 @@ export const ProjectDescription = ({shouldIgnoreParentPadding}:IPageLayoutChild)
 					<Icon  as={BiArrowBack} color={'#F9F9F9'} />
 					<Text color={'#F9F9F9'} fontSize={'14px'}>Back</Text>
 				</HStack>
-				<Heading fontSize={['30px','40px']} color={'#FFFFFF'}>Loop APP</Heading>
+				<Text fontSize={['30px','40px']} color={'#FFFFFF'}>LOOP APP</Text>
 				<Divider />
 				<Stack spacing={[6]} direction={['column', 'row']} align={'flex-start'} justifyContent={'space-between'}>
 					<VStack align={'flex-start'}>

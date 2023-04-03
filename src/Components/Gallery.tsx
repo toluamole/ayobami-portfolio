@@ -55,7 +55,7 @@ export const Gallery = () => {
 				onCloseRequest={() => setIsOpen(false)}
 				onMovePrevRequest={() =>setImgIndex((imgIndex + images.length - 1) % images.length)}
 				onMoveNextRequest={() => setImgIndex((imgIndex + 1) % images.length)}
-				enableZoom={false}
+				enableZoom={true}
 				animationDisabled
 			/>}
 		</MotionBox>

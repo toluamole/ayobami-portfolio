@@ -45,6 +45,27 @@ export const GlobalStyles = css`
         src: url('/CosiAzure-Bold.ttf');
     }
 
+    @font-face {
+        font-family: 'Neue Haas Grotesk Text Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/NHaasGroteskTxPro-55Rg.ttf');
+    }
+
+    @font-face {
+        font-family: 'Neue Haas Grotesk Text Pro';
+        font-style: normal;
+        font-weight: 500;
+        src: url('/NHaasGroteskTxPro-65Md.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Neue Haas Grotesk Text Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/NHaasGroteskTxPro-75Bd.ttf');
+    }
+
 
     ril__caption, .ril__toolbar {
         background-color: transparent;
@@ -58,11 +79,11 @@ export const GlobalStyles = css`
         background-size: 8px;
         // background-postion: 2px;
         backdrop-filter: opacity(1);
-        border-radius: 50%;
-        border: 2px solid white;
+        // border-radius: 50%;
+        // border: 2px solid white;
         padding: 20px;
         // box-shadow: 0 0 3px rgba(198, 198, 211, 0.4);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        // box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         opacity: 1
     }
 
@@ -85,18 +106,18 @@ export const GlobalStyles = css`
         background: transparent url(${nextBtn}) no-repeat center;
         background-size: 8px;
         backdrop-filter: opacity(1);
-        border-radius: 50%;
-        border: 2px solid white;
+        // border-radius: 50%;
+        // border: 2px solid white;
         padding: 20px;
         // box-shadow: 0 0 3px rgba(198, 198, 211, 0.4);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        // box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         opacity : 1
     }
 
     .ril__closeButton {
         background: transparent url(${closeIcon}) no-repeat center;
         background-size: 12px;
-        box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.4) 0px 2px 4px 0px inset
+        // box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.4) 0px 2px 4px 0px inset
     }
 
     ril__caption, .ril__toolbar {
@@ -117,9 +138,9 @@ export const GlobalStyles = css`
     .ril__builtinButton {
         width: 30px;
         height: 30px;
-        border: 2px solid white;
+        // border: 2px solid white;
         padding: 18px;
-        border-radius: 50%;
+        // border-radius: 50%;
         opacity: 1;
     }
 `;

@@ -40,7 +40,7 @@ export const Projects = () => {
 			<Divider />
 			<Grid templateColumns={['repeat(1, 1fr)','repeat(5, 1fr)']} gap={4}>
 				<GridItem colSpan={2} >
-					<Heading fontSize={['14px','30px']}  color={'#FFFFFF'}>COINMUNITEE</Heading>
+					<Text fontWeight={500} fontSize={['14px','30px']}  color={'#FFFFFF'}>COINMUNITEE</Text>
 				</GridItem>
 				<GridItem colSpan={2}  colEnd={10} >
 					<Text fontSize={['12px','18px']} color={'#ABA8B1'}> PRODUCT DESIGN</Text>
@@ -49,7 +49,7 @@ export const Projects = () => {
 			<Divider />
 			<Grid templateColumns={['repeat(1, 1fr)','repeat(5, 1fr)']} gap={4}>
 				<GridItem colSpan={2} >
-					<Heading fontSize={['14px','30px']}  color={'#FFFFFF'}>AKUKO APP</Heading>
+					<Text fontSize={['14px','30px']} fontWeight={500}  color={'#FFFFFF'}>AKUKO APP</Text>
 				</GridItem>
 				<GridItem colSpan={2}  colEnd={10} >
 					<Text fontSize={['12px','18px']} color={'#ABA8B1'}>PRODUCT DESIGN</Text>
@@ -58,7 +58,7 @@ export const Projects = () => {
 			<Divider />
 			<Grid templateColumns={['repeat(1, 1fr)','repeat(5, 1fr)']} gap={4}>
 				<GridItem colSpan={2} >
-					<Heading fontSize={['14px','30px']}  color={'#FFFFFF'}>VORTEX247</Heading>
+					<Text fontSize={['14px','30px']} fontWeight={500}  color={'#FFFFFF'}>VORTEX247</Text>
 				</GridItem>
 				<GridItem colSpan={2}  colEnd={10} >
 					<Text fontSize={['12px','18px']} color={'#ABA8B1'}>WEB DESIGN</Text>

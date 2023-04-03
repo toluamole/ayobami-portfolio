@@ -7,7 +7,7 @@ import { Button,
 	Link,
 	useMediaQuery, 
 } from '@chakra-ui/react';
-import { Link as RLink } from 'react-router-dom';
+import { HashLink as RLink } from 'react-router-hash-link';
 import { AppRoutes } from '../Routes/AppRoutes';
 
 interface INavigationProps{
@@ -51,9 +51,9 @@ export const Navigation = ({display}:INavigationProps) => {
 				</Link>}
 				{ isLargerThan900 && <><HStack spacing={10}>
 					<Link as={RLink} to={AppRoutes.home} fontSize={'14px'} fontWeight={500}>HOME</Link>
-					<Link  fontSize={'14px'} fontWeight={500}>WORK</Link>
-					<Link  fontSize={'14px'} fontWeight={500}>GALLERY</Link>
-					<Link  fontSize={'14px'} fontWeight={500}>CONTACT</Link>
+					<Link as={RLink} to='#SelectedWork' smooth  fontSize={'14px'} fontWeight={500}>WORK</Link>
+					<Link as={RLink} to={'#Gallery'}  smooth  fontSize={'14px'} fontWeight={500}>GALLERY</Link>
+					<Link as={RLink} to={'#Contact'} smooth  fontSize={'14px'} fontWeight={500}>CONTACT</Link>
 				</HStack>
 				
 				<Button
@@ -64,7 +64,7 @@ export const Navigation = ({display}:INavigationProps) => {
 					color='#ffffff'
 					_hover={{ 'transform': ' translateY(0.5px)' }}
 				>
-					<Link _hover={{ 'textDecoration': 'none' }} >
+					<Link as={RLink} to={'#Contact'} smooth _hover={{ 'textDecoration': 'none' }} >
 							SAY HELLO
 					</Link>
 						
