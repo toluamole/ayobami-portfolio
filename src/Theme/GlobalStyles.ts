@@ -76,14 +76,9 @@ export const GlobalStyles = css`
         display: block;
         left: 30px;
         background: transparent url(${prevBtn}) no-repeat center;
-        background-size: 8px;
-        // background-postion: 2px;
+        background-size: 15px;
         backdrop-filter: opacity(1);
-        // border-radius: 50%;
-        // border: 2px solid white;
         padding: 20px;
-        // box-shadow: 0 0 3px rgba(198, 198, 211, 0.4);
-        // box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         opacity: 1
     }
 
@@ -104,20 +99,15 @@ export const GlobalStyles = css`
         display: block;
         right: 30px;
         background: transparent url(${nextBtn}) no-repeat center;
-        background-size: 8px;
+        background-size: 15px;
         backdrop-filter: opacity(1);
-        // border-radius: 50%;
-        // border: 2px solid white;
         padding: 20px;
-        // box-shadow: 0 0 3px rgba(198, 198, 211, 0.4);
-        // box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         opacity : 1
     }
 
     .ril__closeButton {
         background: transparent url(${closeIcon}) no-repeat center;
-        background-size: 12px;
-        // box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.4) 0px 2px 4px 0px inset
+        background-size: 15px;
     }
 
     ril__caption, .ril__toolbar {
@@ -136,11 +126,7 @@ export const GlobalStyles = css`
     }
 
     .ril__builtinButton {
-        width: 30px;
-        height: 30px;
-        // border: 2px solid white;
         padding: 18px;
-        // border-radius: 50%;
         opacity: 1;
     }
 `;
