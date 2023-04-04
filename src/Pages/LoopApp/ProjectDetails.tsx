@@ -35,7 +35,7 @@ export const ProjectDetails = () => {
 			<MotionBox
 				style={{
 					opacity,
-					transition: 'all 0.2s easeIn'
+					transition: 'all 0.2s ease'
 				}}
 			>
 				<Stack spacing={8} mb={'50px'} >

@@ -11,9 +11,10 @@ export const MotionBox = motion(chakra.div);
 
 interface IImagesProps{
 	images: ISelectedWork;
+	content: string;
 }
 
-const Project = ({images}:IImagesProps) => {
+const Project = ({images,content}:IImagesProps) => {
 	const navigate = useNavigate();
 	const targetRef = useRef<HTMLDivElement>(null);
 	const { ref, inView } = useInView({
@@ -74,7 +75,7 @@ const Project = ({images}:IImagesProps) => {
 						// borderRadius: {base:'4px',lg:'10px'}
 					}}
 					_after={{
-						content: '"open"',
+						content: `'${content}'`,
 						// maxWidth: 'auto',
 						width:'100px',
 						height: '100px',
@@ -85,6 +86,7 @@ const Project = ({images}:IImagesProps) => {
 						display: 'flex',
 						justifyContent: 'center',
 						alignItems: 'center',
+						textAlign: 'center',
 						bg:'#CA4F29',
 						borderRadius: '50%',
 						position:'absolute',
@@ -169,9 +171,9 @@ export const SelectedWork = () => {
 					color={'#ffffff'}
 				/>
 			</HStack>
-			<Project images={images[0]} />
-			<Project images={images[1]} />
-			<Project images={images[2]} />
+			<Project content='Open' images={images[0]} />
+			<Project content='Locked' images={images[1]} />
+			<Project content='Open' images={images[2]} />
 		</Box>
 	);
 };

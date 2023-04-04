@@ -37,7 +37,7 @@ export const Navigation = ({display}:INavigationProps) => {
 						bgColor={'#EFC600'}
 					/>
 				</HStack>
-				{!isLargerThan900 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }} to=''>
+				{!isLargerThan900 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }}  to={'#Contact'}>
 					<Button
 						fontSize={'12px'}
 						fontWeight={500}

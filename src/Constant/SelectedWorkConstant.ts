@@ -19,7 +19,6 @@ export const images:ISelectedWork[] = [
 		src: Archibald,
 		title: 'Archibald',
 		desc: 'Designing a full experience for customers to give feedbacks on their favorites product while they earn',
-		path: AppRoutes.archibaldLondon
 	},
 	{
 		id: 2,
