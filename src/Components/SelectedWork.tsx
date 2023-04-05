@@ -62,6 +62,7 @@ const Project = ({images,content}:IImagesProps) => {
 					style={{clipPath, transition: '0.5s ease'}}
 					position={'relative'}
 					onClick={()=> navigate(images.path || '')} 
+					cursor={'pointer'}
 					_before={{
 						content:'" "',
 						position:'absolute',
@@ -135,6 +136,7 @@ const Project = ({images,content}:IImagesProps) => {
 						transform={'skewX(-10deg)'}
 						onClick={()=> navigate(images.path || '')}
 						display={['none', 'block']}
+						cursor={'pointer'}
 					/>
 					<Flex
 						justifyContent={'center'}

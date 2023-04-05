@@ -24,10 +24,11 @@ const TakeAway = ({items, borderColor}:ITakeAwayProps) => {
 				opacity: isInView ? 1 : 0,
 				transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'
 			}}
+			
 		>
-			<Stack p={['20px',5]} border={`1px solid ${borderColor}`} key={items.id}>
+			<Stack  p={['20px',5]} border={`1px solid ${borderColor}`} key={items.id}>
 				<Text color={'#ABA8B1'} fontSize={['16px','18px']}>{items.text}</Text>
-				<Text color={'#ABA8B1'} fontSize={['14px','18px']}  w={['full','500px']}>{items.subText}</Text>
+				<Text color={'#ABA8B1'} fontSize={['14px','18px']}  w={['full', '300px', null, '500px']}>{items.subText}</Text>
 			</Stack>
 		</MotionBox>
 	);
@@ -86,13 +87,14 @@ export const UserExperience = ({shouldIgnoreParentPadding, userJourneyImage, use
 					<Image 
 						display={['block', 'none']} 
 						src={userJourneyMobile} 
+						{...(shouldIgnoreParentPadding  && { px:['3', '40px', null, '150px'], py:['50px','100px'] })} 
 					/>
 				</MotionBox>
 			</Stack>
 			<Stack 
 				{...(shouldIgnoreParentPadding  && { px:['3', '40px', null, '150px'], py:['50px','100px'] })} 
 				direction={['column','row']} 
-				spacing={['30px','72']} 
+				spacing={['30px', null, null, '72']} 
 				align={'flex-start'} 
 				justifyContent={'space-between'}
 			>

@@ -8,7 +8,6 @@ import { UserExperience } from './UserExperience';
 import { LoopColors } from '../../Constant/Colors';
 import userJourney from '../../Assets/image/user-journey.png';
 import LoopScreens from '../../Assets/image/Loop-screens.png';
-import userJourneyMobile from '../../Assets/image/userJourneyMobile.png';
 
 export const LoopApp = () => {
 	return(
@@ -24,7 +23,7 @@ export const LoopApp = () => {
 				borderColor='#E54927'
 				userJourneyImage={userJourney}
 				appScreens={LoopScreens}
-				userJourneyMobile={userJourneyMobile}
+				userJourneyMobile={userJourney}
 			/>
 			<Projects  />
 		</PageLayout>

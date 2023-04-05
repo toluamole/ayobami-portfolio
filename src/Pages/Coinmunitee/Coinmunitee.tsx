@@ -8,6 +8,7 @@ import { DesignProcess } from './DesignProcess';
 import { ProjectDescription } from './ProjectDescription';
 import { ProjectDetails } from './ProjectDetails';
 import userJourney from '../../Assets/image/UserExperience.png';
+import userJourneyMobile from '../../Assets/image/userJourneyMobile.png';
 
 export const Coinmuinitee = () => {
 	return(
@@ -24,7 +25,7 @@ export const Coinmuinitee = () => {
 				shouldIgnoreParentPadding 
 				borderColor='#58A771'
 				userJourneyImage={userJourney}
-				userJourneyMobile={userJourney}
+				userJourneyMobile={userJourneyMobile}
 			/>
 			<Projects />
 		</PageLayout>
