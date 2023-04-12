@@ -28,7 +28,7 @@ export const PageLayout = ({jumbotronSection, children, backgroundColor, display
 			<Box
 				bg={backgroundColor}
 				bgSize='cover'
-				px={['3', '20']}
+				px={['3', '10']}
 				height={'100%'}
 			>
 				<Navigation display={display} />
@@ -45,7 +45,7 @@ export const PageLayout = ({jumbotronSection, children, backgroundColor, display
 					}
 
 					return (
-						<Box  maxW={'1440px'} m={'0 auto'}  px={['3', '40px', null, '150px']} py={['20px','80px']} >
+						<Box  maxW={'1440px'} m={'0 auto'}  px={['3', '40px', null, '100px']} py={['20px','80px']} >
 							{child}
 						</Box>
 					);

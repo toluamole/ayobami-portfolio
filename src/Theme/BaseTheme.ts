@@ -14,6 +14,6 @@ export const theme = extendTheme({
 	breakpoints,
 	fonts: {
 		heading: 'Cosi Azure',
-		body: 'Neue Haas Grotesk Text Pro'
+		body: 'Neue Haas Grotesk Text Pro',
 	},
 });

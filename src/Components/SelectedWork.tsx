@@ -18,16 +18,16 @@ const Project = ({images,content}:IImagesProps) => {
 	const navigate = useNavigate();
 	const targetRef = useRef<HTMLDivElement>(null);
 	const { ref, inView } = useInView({
-		threshold: 0.8,
+		threshold: 0.5,
 	});
 	const {scrollYProgress} = useScroll({
 		target: targetRef,
-		offset: ['end end', 'start end'],
+		offset: ['start end', 'end end'],
 	});
 	const clipPath = useTransform(
 		scrollYProgress, 
 		(value) => {
-			return value ? 'polygon(45% 20%, 55% 20%, 55% 80%, 45% 80%)' : ' polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)';
+			return value ?  ' polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' : 'polygon(45% 20%, 55% 20%, 55% 80%, 45% 80%)';
 		},
 	);
 	const opacity = useTransform(scrollYProgress, () => {
@@ -123,9 +123,9 @@ const Project = ({images,content}:IImagesProps) => {
 				>
 					<Stack direction={['row', 'column']} align={['center', 'start']} mb={[4, 0]}>
 						<Text textDecoration={['none','underline']} fontWeight={300} fontSize={['24px','14px']} color={'#ABA8B1'}>{images.index}</Text>
-						<Heading fontSize={['24px','30px']} fontWeight={400} color={'#F8F8F8'}>{images.title}</Heading>
+						<Heading fontSize={['24px', null, null, '30px']} fontWeight={400} color={'#F8F8F8'}>{images.title}</Heading>
 					</Stack>
-					<Text fontSize={['14px','18px']} fontWeight={300} w={['auto','500px']} color={'#ABA8B1'}>{images.desc}</Text>
+					<Text fontSize={['14px', null, null, '18px']} fontWeight={300} w={['auto', '420px', null,'500px']} color={'#ABA8B1'}>{images.desc}</Text>
 					<Icon 
 						border={'0.5px solid #E54927'} 
 						borderRadius={'50%'} 
