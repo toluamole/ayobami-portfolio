@@ -1,4 +1,4 @@
-import { Flex, Image, VStack, Text, Button, Stack, Link, textDecoration } from '@chakra-ui/react';
+import { Flex, Image, VStack, Text, Button, Stack, Link } from '@chakra-ui/react';
 import React from 'react';
 import profile from '../Assets/image/profile.png';
 import Resume from '../Assets/Ayobami-Adeolu-Resume.pdf';
