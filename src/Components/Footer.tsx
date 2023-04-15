@@ -15,8 +15,17 @@ export const Footer = () => {
 			id='Contact'
 		>
 			<Text fontSize={['14px','20px']} fontWeight={400} color={'#ABA8B1'}>WANT TO TALK ABOUT A PROJECT?</Text>
-			<Heading fontSize={['36px','100px']} color={'#F8F8F8'} borderBottom={'2px solid #F8F8F8'}>LET&apos;S CONNECT!</Heading>
-			<Text w={['100%','70%']} fontWeight={300} fontSize={['14px','16px']} color={'#fff'} textAlign={'center'} pb={['10px','50px']}>I work at the intersection of brand and product, bringing a heavy sense of graphic design to my digital work. 
+			<Heading 
+				as={RLink}
+				to={'javascript:void(0)'} 
+				fontSize={['36px','100px']} 
+				color={'#F8F8F8'} 
+				borderBottom={'10px solid #F8F8F8'} 
+				_hover={{textDecoration: 'none'}}
+				onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}>
+					
+			LET&apos;S CONNECT!</Heading>
+			<Text w={['100%','760px']} fontWeight={300} fontSize={['14px','16px']} color={'#fff'} textAlign={'center'} pb={['10px','50px']}>I work at the intersection of brand and product, bringing a heavy sense of graphic design to my digital work. 
                 Currently based in Lagos and open for remote, contract, and freelance opportunities.
 			</Text>
 			<Stack direction={['column', 'row']} justify={'center'} align={['center', 'center']} wrap={'wrap'} spacing={['40px','60px']}>
@@ -27,7 +36,17 @@ export const Footer = () => {
 				<Link as={RLink} target={'_blank'} to='https://www.linkedin.com/in/ayobami-adeolu/'  _hover={{color:'#E54927'}} fontSize={['14px','14px']} color={'#fff'} textDecoration={'underline'}>LINKEDIN</Link>
 			</Stack>
 			<Divider color={'#E5E5E5'} />
-			<Text textAlign={'center'} fontWeight={300} fontSize={'14px'} color={'#fff'}>Site designed by <chakra.span color={'#E54927'}>Me</chakra.span> and developed by <chakra.span color={'#E54927'}>Toluwanimi Amole</chakra.span> </Text>
+			<Text 
+				as={RLink}
+				to={'javascript:void(0)'} 
+				textAlign={'center'} 
+				fontWeight={300} 
+				fontSize={'14px'} 
+				color={'#fff'}
+				onClick={() => window.location.href = 'mailto:amoletoluwanimi@gmail.com'}
+			>
+				Site designed by <chakra.span color={'#E54927'}>Me</chakra.span> and developed by <chakra.span color={'#E54927'}>Toluwanimi Amole</chakra.span> 
+			</Text>
 		</Stack>
 	);
 };

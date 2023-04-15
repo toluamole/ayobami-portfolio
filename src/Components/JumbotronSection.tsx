@@ -1,4 +1,4 @@
-import { Flex, Image, VStack, Text, Button, Stack, Link } from '@chakra-ui/react';
+import { Flex, Image, VStack, Text, Button, Stack, Link, Heading } from '@chakra-ui/react';
 import React from 'react';
 import profile from '../Assets/image/profile.png';
 import Resume from '../Assets/Ayobami-Adeolu-Resume.pdf';
@@ -7,10 +7,10 @@ export const JumbotronSection = () => {
 	return (
 		<Flex direction={'column'} justifyContent={'center'} alignItems={'center'}>
 			<VStack justify={'center'} align={'center'} my={['50px','80px']}>
-				<Text fontSize={['34px','56px']} fontWeight={500} color={'white'} >A COLLECTION OF DESIGN ARTIFACTS</Text>
-				<Text fontSize={['34px','56px']} fontWeight={500} color={'white'}> MADE WITH LOVE AND PURPOSE</Text>
+				<Heading fontSize={['34px','70px']} fontWeight={500} color={'white'} >Digital Product Designer.</Heading>
+				<Heading alignSelf={'flex-end'} fontSize={['34px','70px']} fontWeight={500} color={'white'}> Creative.</Heading>
 			</VStack>
-			<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 4]} pb={'90px'}>
+			<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 4]} pb={'150px'}>
 				<Image 
 					cursor={'pointer'} 
 					boxSize={'100%'} 
@@ -25,13 +25,12 @@ export const JumbotronSection = () => {
 					transition={' all ease-in .2s'}
 				/>
 				<VStack spacing={6} pt={[0,6]}>
-					<Text color={'#ABA8B1'} fontSize={['14px','18px']}> Hi, I am Ayobami Adeolu a designer with over 3 years of experience, 
-                        I have been designing digital products for the banking, hospitality, fashion, healthcare, pharmaceutical, automotive, 
-                        and software industries. 
+					<Text w={['auto', '462px']} color={'#ABA8B1'} fontSize={['14px','18px']}> Hi, I am Ayobami Adeolu a digital product designer and a creative with over 4 years of experience. 
+					I have been designing digital products for the banking, hospitality, fashion, healthcare, pharmaceutical, automotive, and software industries.
 					</Text>
-					<Text color={'#ABA8B1'} fontSize={['14px','18px']}>
-                        I have worked with various startups in the US, UK, and internationally at large as a contractor, part time, freelancer, and full time employee. Throughout my career, 
-                        I have done the entire project lifecycle, from user research and user testing to creating user flows, wireframes, high-fidelity designs, and prototypes.
+					<Text w={['auto', '462px']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
+					I am based in Lagos and I have been privileged to have worked with various brands and startups worldwide as a contractor, part-time, freelancer, and full-time employee. 
+					Throughout my career, I have done the entire project lifecycle, from user research and user testing to creating user flows, wireframes, high fidelity designs, and prototypes.
 					</Text>
 					<Link alignSelf={'flex-start'} href={Resume} _hover={{textDecoration: 'none'}}><Button 
 						bg={'transparent'}

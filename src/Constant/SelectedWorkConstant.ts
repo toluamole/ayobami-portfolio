@@ -18,14 +18,14 @@ export const images:ISelectedWork[] = [
 		index: '02',
 		src: Archibald,
 		title: 'Archibald',
-		desc: 'Designing a full experience for customers to give feedbacks on their favorites product while they earn',
+		desc: 'Designing an end-to-end shopping experience for users to shop luxuriously crafted items of all kinds.',
 	},
 	{
 		id: 2,
 		index: '03',
 		src: Coinmuinitee,
 		title: 'Coinmuinitee',
-		desc: 'Designing a full experience for customers to give feedbacks on their favorites product while they earn',
+		desc: 'Launching a crypto platform that provides a p2p trading experience for users to safely transact amongst one another.',
 		path: AppRoutes.coinmunitee
 	},
 

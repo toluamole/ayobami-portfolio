@@ -1,4 +1,4 @@
-import { Box, Divider, Image, Stack, VStack, Text, BoxProps, HStack } from '@chakra-ui/react';
+import { Box, Divider, Image, Stack, VStack, Text, BoxProps, HStack, Heading } from '@chakra-ui/react';
 import React from 'react';
 import { IPageLayoutChild } from '../../Layout/pageLayout';
 import LoopBackground from '../../Assets/image/Loop-background.png';
@@ -7,6 +7,7 @@ import { Icon } from '@chakra-ui/react';
 import {BiArrowBack} from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 import { AppRoutes } from '../../Routes/AppRoutes';
+import { Link as RLink } from 'react-router-dom';
 
 export const MotionBox = motion<BoxProps>(Box);
 
@@ -21,7 +22,7 @@ export const ProjectDescription = ({shouldIgnoreParentPadding}:IPageLayoutChild)
 					<Icon  as={BiArrowBack} color={'#F9F9F9'} />
 					<Text color={'#F9F9F9'} fontSize={'14px'}>Back</Text>
 				</HStack>
-				<Text fontSize={['30px','40px']} color={'#FFFFFF'}>LOOP APP</Text>
+				<Heading fontSize={['30px','40px']} color={'#FFFFFF'}>LOOP APP</Heading>
 				<Divider />
 				<Stack spacing={[6]} direction={['column', 'row']} align={'flex-start'} justifyContent={'space-between'}>
 					<VStack align={'flex-start'}>
@@ -43,7 +44,15 @@ export const ProjectDescription = ({shouldIgnoreParentPadding}:IPageLayoutChild)
 					</VStack>
 					<VStack align={'flex-start'}>
 						<Text fontSize={['16px', '18px']} fontWeight={700} color={'#ABA8B1'}>LINK</Text>
-						<Text fontSize={['14px', '16px']} fontWeight={300} color={'#E54927'}>Visit website</Text>
+						<Text as={RLink} 
+							to='https://feedtheloop-stage.netlify.app/help' 
+							fontSize={['14px', '16px']} 
+							fontWeight={300} 
+							color={'#ABA8B1'}
+							textDecoration={'underline'}
+						> 
+							Visit website
+						</Text>
 					</VStack>
 				</Stack>
 			</Stack>

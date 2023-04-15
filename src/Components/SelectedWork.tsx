@@ -117,15 +117,15 @@ const Project = ({images,content}:IImagesProps) => {
 					display={'flex'} 
 					flexDirection= {['column','row']}
 					style={{ opacity, y: navY, transition: '.3s ease-in' }}
-					my={10} 
+					mb={20} mt={10}
 					justifyContent={'space-between'} 
 					alignItems={['start','center']}
 				>
-					<Stack direction={['row', 'column']} align={['center', 'start']} mb={[4, 0]}>
+					<Stack direction={['row', 'column']} align={['center', 'start']}  mb={[4, 0]}>
 						<Text textDecoration={['none','underline']} fontWeight={300} fontSize={['24px','14px']} color={'#ABA8B1'}>{images.index}</Text>
 						<Heading fontSize={['24px', null, null, '30px']} fontWeight={400} color={'#F8F8F8'}>{images.title}</Heading>
 					</Stack>
-					<Text fontSize={['14px', null, null, '18px']} fontWeight={300} w={['auto', '420px', null,'500px']} color={'#ABA8B1'}>{images.desc}</Text>
+					<Text fontSize={['14px', null, null, '18px']} fontWeight={300} w={['auto', '420px', null,'520px']} color={'#ABA8B1'}>{images.desc}</Text>
 					<Icon 
 						border={'0.5px solid #E54927'} 
 						borderRadius={'50%'} 

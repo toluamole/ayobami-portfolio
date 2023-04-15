@@ -32,7 +32,10 @@ export const Navigation = ({display}:INavigationProps) => {
 				borderRadius={'5px'}
 			>
 				<Image src={PortfolioLogo} />
-				{!isLargerThan900 && <Link as={RLink} _hover={{ 'textDecoration': 'none' }}  to={'#Contact'}>
+				{!isLargerThan900 && <Link as={RLink} 
+					_hover={{ 'textDecoration': 'none' }}  
+					to={'javascript:void(0)'} 
+					onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}>
 					<Button
 						fontSize={'12px'}
 						fontWeight={500}
@@ -85,7 +88,11 @@ export const Navigation = ({display}:INavigationProps) => {
 					color='#ffffff'
 					_hover={{ 'transform': ' translateY(0.5px)' }}
 				>
-					<Link as={RLink} to={'#Contact'} smooth _hover={{ 'textDecoration': 'none' }} >
+					<Link as={RLink} to={'javascript:void(0)'} 
+						smooth 
+						_hover={{ 'textDecoration': 'none' }} 
+						onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}
+					>
 							SAY HELLO👋🏾
 					</Link>
 						
