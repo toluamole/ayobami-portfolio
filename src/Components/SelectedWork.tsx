@@ -117,7 +117,7 @@ const Project = ({images,content}:IImagesProps) => {
 					display={'flex'} 
 					flexDirection= {['column','row']}
 					style={{ opacity, y: navY, transition: '.3s ease-in' }}
-					mb={20} mt={10}
+					mb={20} mt={5}
 					justifyContent={'space-between'} 
 					alignItems={['start','center']}
 				>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState} from 'react';
 import {
 	ChakraProvider,
 } from '@chakra-ui/react';
@@ -9,14 +9,27 @@ import { Global } from '@emotion/react';
 import { GlobalStyles } from './Theme/GlobalStyles';
 import AnimatedCursor from 'react-animated-cursor';
 import { MainRoutes } from './Routes/MainRoutes';
+import { Preloader } from './Components/Preloader';
 
-export const App = () => (
+export const App = () => {
+	const [isLoading, setIsLoading] = useState(true);
+
+	const handleLoadingComplete = () => {
+		setIsLoading(false);
+	};
+
+	return(
+		<ChakraProvider theme={theme}>
+			{/* <ColorModeSwitcher justifySelf="flex-end" /> */}
+			{isLoading && <Preloader onComplete={handleLoadingComplete} />}
+			<AnimatedCursor innerSize={15} outerSize={40} outerScale={1}  clickables={['button', 'a']} />
+			<Global styles={GlobalStyles}/>
+			{
+				!isLoading && <MainRoutes />
+			}
+			
+			<Fonts/>
+		</ChakraProvider>
+	);
 	
-	<ChakraProvider theme={theme}>
-		{/* <ColorModeSwitcher justifySelf="flex-end" /> */}
-		<AnimatedCursor innerSize={15} outerSize={40} outerScale={1}  clickables={['button', 'a']} />
-		<Global styles={GlobalStyles}/>
-		<MainRoutes />
-		<Fonts/>
-	</ChakraProvider>
-);
+};
