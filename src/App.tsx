@@ -12,6 +12,7 @@ import { MainRoutes } from './Routes/MainRoutes';
 import { Preloader } from './Components/Preloader';
 
 export const App = () => {
+	// eslint-disable-next-line 
 	const [isLoading, setIsLoading] = useState(true);
 
 	const handleLoadingComplete = () => {

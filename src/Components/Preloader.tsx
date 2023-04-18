@@ -23,17 +23,17 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 		});
 	}, [controls, onComplete]);
 
-	const containerVariants = {
-		hidden: {
-			opacity: 0,
-		},
-		visible: {
-			opacity: 1,
-			transition: {
-				duration: 1
-			}
-		}
-	};
+	// const containerVariants = {
+	// 	hidden: {
+	// 		opacity: 0,
+	// 	},
+	// 	visible: {
+	// 		opacity: 1,
+	// 		transition: {
+	// 			duration: 1
+	// 		}
+	// 	}
+	// };
 	const BoxVariant = {
 		hidden: {
 			opacity: 0,
