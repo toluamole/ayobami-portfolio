@@ -27,7 +27,7 @@ export const Projects = () => {
 							width: '355px',
 							height: '355px',
 							bgGradient: 'radial-gradient(50% 50% at 50% 50%, rgba(229, 73, 39, 0.2) 0%, rgba(229, 73, 39, 0) 100%)',
-							zIndex: '-1'
+							// zIndex: '-1'
 						}}
 					>
 						OTHER PROJECTS

@@ -34,7 +34,7 @@ export const Navigation = ({display}:INavigationProps) => {
 				<Image src={PortfolioLogo} />
 				{!isLargerThan900 && <Link as={RLink} 
 					_hover={{ 'textDecoration': 'none' }}  
-					to={'javascript:void(0)'} 
+					to={''} 
 					onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}>
 					<Button
 						fontSize={'12px'}
@@ -54,9 +54,13 @@ export const Navigation = ({display}:INavigationProps) => {
 						w={'140px'}
 						h={'40px'} bg={'#E54927'}
 						color='#ffffff'
-						_hover={{ 'transform': ' translateY(0.5px)' }}
+						_hover={{ 
+							'transform': ' translateY(0.5px)', 
+							bgColor: '#fff',
+							color: '#E54927'
+						}}
 					>
-						<Link as={RLink} to={'javascript:void(0)'} 
+						<Link as={RLink} to={''} 
 							smooth 
 							_hover={{ 'textDecoration': 'none' }} 
 							onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}

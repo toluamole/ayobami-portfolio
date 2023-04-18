@@ -1,7 +1,8 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import { Footer } from '../Components/Footer';
 import { Navigation } from '../Components/Navigation';
+import { Preloader } from '../Components/Preloader';
 import { MotionBox } from '../Components/SelectedWork';
 
 export interface IPageLayoutChild {
@@ -16,6 +17,12 @@ interface IPageLayoutProps{
 }
 
 export const PageLayout = ({jumbotronSection, children, backgroundColor, display}: IPageLayoutProps) => {
+	// eslint-disable-next-line 
+	const [isLoading, setIsLoading] = useState(true);
+
+	const handleLoadingComplete = () => {
+		setIsLoading(false);
+	};
 	return (
 		<MotionBox 
 			overflowX={'hidden'} 
@@ -46,6 +53,7 @@ export const PageLayout = ({jumbotronSection, children, backgroundColor, display
 
 					return (
 						<Box  maxW={'1440px'} m={'0 auto'}  px={['3', '40px', null, '100px']} py={['20px','60px']} >
+							<Preloader onComplete={handleLoadingComplete} /> 
 							{child}
 						</Box>
 					);

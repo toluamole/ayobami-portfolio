@@ -66,7 +66,7 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 	
 
 	return(
-		<AnimatePresence exitBeforeEnter>
+		<AnimatePresence>
 			<MotionBox
 				w={'100vw'}
 				h={'100vh'}

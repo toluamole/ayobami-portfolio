@@ -10,7 +10,7 @@ interface IscrollProp{
 export const ScrollToTop = ({children}:IscrollProp) => {
 	const location = useLocation();
 	useEffect(() => {
-		window.scroll(0, 100);
+		window.scroll(0, 0);
 	}, [location]);
 
 	return (

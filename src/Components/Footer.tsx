@@ -17,7 +17,7 @@ export const Footer = () => {
 			<Text fontSize={['14px','20px']} fontWeight={400} color={'#ABA8B1'}>WANT TO TALK ABOUT A PROJECT?</Text>
 			<Heading 
 				as={RLink}
-				to={'javascript:void(0)'} 
+				to={''} 
 				fontSize={['36px','100px']} 
 				color={'#F8F8F8'} 
 				borderBottom={'10px solid #F8F8F8'} 
@@ -38,7 +38,7 @@ export const Footer = () => {
 			<Divider color={'#E5E5E5'} />
 			<Text 
 				as={RLink}
-				to={'javascript:void(0)'} 
+				to={''} 
 				textAlign={'center'} 
 				fontWeight={300} 
 				fontSize={'14px'} 
