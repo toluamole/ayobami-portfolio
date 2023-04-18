@@ -26,11 +26,9 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 	const containerVariants = {
 		hidden: {
 			opacity: 0,
-			// marginLeft: '-50px'
 		},
 		visible: {
 			opacity: 1,
-			// marginLeft: '0px',
 			transition: {
 				duration: 1
 			}
@@ -39,11 +37,9 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 	const BoxVariant = {
 		hidden: {
 			opacity: 0,
-			// width: 0
 		},
 		visible: {
 			opacity: 1,
-			// width: '10%',
 			transition: {
 				duration: 1,
 				delay: 0.5
@@ -86,18 +82,9 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 				overflow={'hidden'}
 				initial={{ y: 0 }}
 				animate={controls}
-				// initial={{y: 0}}
-				// animate={{y: 0}}
-				// transition={{duration: 0.5, ease: 'easeOut'}}
-				
-				// exit={{
-				// 	y: '-100%',
-				// 	// opacity: 1,
-					
-				// }}
 			>
 				<MotionBox
-					variants={containerVariants}
+					// variants={containerVariants}
 					initial="hidden"
 					animate="visible"
 					display={'flex'}
@@ -112,8 +99,6 @@ export const Preloader = ({onComplete}:IPreloaderProp) => {
 					</MotionBox>
 					<MotionBox 
 						variants={BoxVariant}
-						// animate={'visible'}
-						// initial={'hidden'}
 						ml={1}
 						w={'8px'}
 						h={'8px'}

@@ -21,12 +21,14 @@ export const App = () => {
 	return(
 		<ChakraProvider theme={theme}>
 			{/* <ColorModeSwitcher justifySelf="flex-end" /> */}
-			{isLoading && <Preloader onComplete={handleLoadingComplete} />}
+			<Preloader onComplete={handleLoadingComplete} />
+			<MainRoutes />
+			{/* {isLoading && <Preloader onComplete={handleLoadingComplete} />} */}
 			<AnimatedCursor innerSize={15} outerSize={40} outerScale={1}  clickables={['button', 'a']} />
 			<Global styles={GlobalStyles}/>
-			{
+			{/* {
 				!isLoading && <MainRoutes />
-			}
+			} */}
 			
 			<Fonts/>
 		</ChakraProvider>

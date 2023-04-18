@@ -26,8 +26,8 @@ export const Navigation = ({display}:INavigationProps) => {
 			<Flex 
 				justifyContent={'space-between'} 
 				alignItems='center'
-				bg={'#ffffff'}
-				px={[4,8]}
+				// bg={'#ffffff'}
+				px={[4,'100px']}
 				h={'60px'}
 				borderRadius={'5px'}
 			>
@@ -47,58 +47,27 @@ export const Navigation = ({display}:INavigationProps) => {
 					SAY HELLO👋🏾
 					</Button>
 				</Link>}
-				{ isLargerThan900 && <><HStack spacing={10}>
-					<Link 
-						as={RLink} 
-						to={AppRoutes.home} 
-						fontSize={'14px'} 
+				{ isLargerThan900 && 
+					<Button
+						fontSize={'14px'}
 						fontWeight={500}
-						_hover={{textDecoration: 'none'}}
+						w={'140px'}
+						h={'40px'} bg={'#E54927'}
+						color='#ffffff'
+						_hover={{ 'transform': ' translateY(0.5px)' }}
 					>
-						HOME
-					</Link>
-					<Link 
-						as={RLink} 
-						to='#SelectedWork' 
-						smooth  
-						fontSize={'14px'} 
-						fontWeight={500}
-						_hover={{textDecoration: 'none'}}
-					>
-						WORK
-					</Link>
-					<Link 
-						as={RLink} 
-						to={'#Gallery'}  
-						smooth  
-						fontSize={'14px'} 
-						fontWeight={500}
-						_hover={{textDecoration: 'none'}}
-					>
-						GALLERY
-					</Link>
-					<Link as={RLink} to={'#Contact'} smooth  fontSize={'14px'} fontWeight={500} _hover={{textDecoration: 'none'}}>CONTACT</Link>
-				</HStack>
+						<Link as={RLink} to={'javascript:void(0)'} 
+							smooth 
+							_hover={{ 'textDecoration': 'none' }} 
+							onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}
+						>
+								SAY HELLO👋🏾
+						</Link>
+							
+					</Button> 
 				
-				<Button
-					fontSize={'14px'}
-					fontWeight={500}
-					w={'140px'}
-					h={'40px'} bg={'#E54927'}
-					color='#ffffff'
-					_hover={{ 'transform': ' translateY(0.5px)' }}
-				>
-					<Link as={RLink} to={'javascript:void(0)'} 
-						smooth 
-						_hover={{ 'textDecoration': 'none' }} 
-						onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}
-					>
-							SAY HELLO👋🏾
-					</Link>
-						
-				</Button> 
-				</>
 				}
+
 			</Flex>
 		</Box>
 	);

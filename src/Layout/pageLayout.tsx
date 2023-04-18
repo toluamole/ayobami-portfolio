@@ -20,10 +20,10 @@ export const PageLayout = ({jumbotronSection, children, backgroundColor, display
 		<MotionBox 
 			overflowX={'hidden'} 
 			bg={'#2C2C30'}
-			initial={{y: '100%'}}
-			animate={{y: '0'}}
-			transition={{duration: 0.5, ease: 'easeOut'}}
-			exit={{opacity: 1}}
+			// initial={{y: '100%'}}
+			// animate={{y: '0'}}
+			// transition={{duration: 0.5, ease: 'easeOut'}}
+			// exit={{opacity: 1}}
 		>
 			<Box
 				bg={backgroundColor}
