@@ -137,6 +137,10 @@ const Project = ({images,content}:IImagesProps) => {
 						onClick={()=> navigate(images.path || '')}
 						display={['none', 'block']}
 						cursor={'pointer'}
+						transition={'all ease .3s'}
+						_hover={{
+							transform: 'translateY(-0.5px)'
+						}}
 					/>
 					<Flex
 						justifyContent={'center'}
