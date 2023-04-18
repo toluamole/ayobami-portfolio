@@ -38,14 +38,15 @@ export const Footer = () => {
 			<Divider color={'#E5E5E5'} />
 			<Text 
 				as={RLink}
-				to={''} 
+				to={'https://www.linkedin.com/in/toluwanimi-amole/'} 
 				textAlign={'center'} 
 				fontWeight={300} 
 				fontSize={'14px'} 
 				color={'#fff'}
-				onClick={() => window.location.href = 'mailto:amoletoluwanimi@gmail.com'}
+				
+				// onClick={() => window.location.href = 'mailto:amoletoluwanimi@gmail.com'}
 			>
-				Site designed by <chakra.span color={'#E54927'}>Me</chakra.span> and developed by <chakra.span color={'#E54927'}>Toluwanimi Amole</chakra.span> 
+				Site designed by <chakra.span color={'#E54927'}>Me</chakra.span> and developed by <chakra.span _hover={{ textDecoration:'underline' }} color={'#E54927'}>Toluwanimi Amole</chakra.span> 
 			</Text>
 		</Stack>
 	);
