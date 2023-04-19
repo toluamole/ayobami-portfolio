@@ -45,7 +45,7 @@ export const ProjectDescription = ({shouldIgnoreParentPadding}:IPageLayoutChild)
 					<VStack align={'flex-start'}>
 						<Text fontSize={['16px', '18px']} fontWeight={700} color={'#ABA8B1'}>LINK</Text>
 						<Text as={RLink} 
-							to='https://feedtheloop-stage.netlify.app/help' 
+							to='https://www.feedtheloop.com/' 
 							fontSize={['14px', '16px']} 
 							fontWeight={300} 
 							color={'#ABA8B1'}
