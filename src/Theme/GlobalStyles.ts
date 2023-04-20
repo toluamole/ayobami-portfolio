@@ -129,4 +129,7 @@ export const GlobalStyles = css`
         padding: 18px;
         opacity: 1;
     }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 `;
