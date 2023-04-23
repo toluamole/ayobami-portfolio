@@ -6,10 +6,12 @@ import { MotionBox } from './SelectedWork';
 import { AnimatePresence } from 'framer-motion';
 
 export const JumbotronSection = () => {
-	const firstText= 'Digital Product Designer.';
-	const secondText = 'Creative.';
+	const firstText= 'Digital ';
+	const secondText = 'Product Designer.';
+	const thirdText = 'Creative.';
 	const splitfirstText = Array.from(firstText);
 	const splitSecondText = Array.from(secondText);
+	const splitThirdText = Array.from(thirdText);
 	
 
 	const containerVariants = {
@@ -50,7 +52,7 @@ export const JumbotronSection = () => {
 
 	return (
 		<AnimatePresence exitBeforeEnter>
-			<Flex direction={'column'} justifyContent={'center'} alignItems={'center'}>
+			<Flex direction={'column'} justifyContent={'center'} alignItems={['start','center']}>
 				<VStack justify={'center'} align={'end'} my={['50px','80px']}>
 					<MotionBox
 						variants={containerVariants}
@@ -62,32 +64,55 @@ export const JumbotronSection = () => {
 						alignItems={['baseline','end']}
 						w={['100%']} px={['9px', 0]}
 					>
-						<Flex wrap={'wrap'}>
-							{
-								splitfirstText.map((word, index) => {
-									return(
-										<MotionBox
-											key={index}
-											variants={childVariants}
-										>
-											<Heading 
-												key={index} 
-												fontSize={['34px','70px']} 
-												fontWeight={500} 
-												color={'white'} 
-												// textAlign={['end'} 
+						<Flex direction={['column', 'row']}>
+							<Flex  >
+								{
+									splitfirstText.map((word, index) => {
+										return(
+											<MotionBox
+												key={index}
+												variants={childVariants}
 											>
-												{word === ' ' ? '\u00A0' : word}
-											</Heading>
-										</MotionBox>
-									);
-								})
-							}
+												<Heading 
+													key={index} 
+													fontSize={['30px','70px']} 
+													fontWeight={500} 
+													color={'white'} 
+												>
+													{word === ' ' ? '\u00A0' : word}
+												</Heading>
+											</MotionBox>
+										);
+									})
+								}
+							</Flex>
+
+							<Flex >
+								{
+									splitSecondText.map((word, index) => {
+										return(
+											<MotionBox
+												key={index}
+												variants={childVariants}
+											>
+												<Heading 
+													key={index} 
+													fontSize={['30px','70px']} 
+													fontWeight={500} 
+													color={'white'} 
+												>
+													{word === ' ' ? '\u00A0' : word}
+												</Heading>
+											</MotionBox>
+										);
+									})
+								}
+							</Flex>
 						</Flex>
 
 						<Flex>
 							{
-								splitSecondText.map((word, index) => {
+								splitThirdText.map((word, index) => {
 									return(
 										<MotionBox
 											variants={childVariants}
@@ -96,7 +121,7 @@ export const JumbotronSection = () => {
 											<Heading 
 												key={index} 
 												// alignSelf={'flex-end'} 
-												fontSize={['34px','70px']} 
+												fontSize={['30px','70px']} 
 												fontWeight={500} 
 												color={'white'}
 											> 

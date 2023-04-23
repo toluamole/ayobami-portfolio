@@ -35,7 +35,7 @@ export const PageLayout = ({jumbotronSection, children, backgroundColor, display
 			<Box
 				bg={backgroundColor}
 				bgSize='cover'
-				px={['3', '10']}
+				px={['2', '10']}
 				height={'100%'}
 			>
 				<Navigation display={display} />
