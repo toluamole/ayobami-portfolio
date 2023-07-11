@@ -1,6 +1,5 @@
 import React from 'react';
 import {  PageLayout } from '../../Layout/pageLayout';
-import { Projects } from './Projects';
 import { ProjectDescription } from './ProjectDescription';
 import { ProjectDetails } from './ProjectDetails';
 import { VisualExperience } from './VisualExperience';
@@ -25,7 +24,6 @@ export const LoopApp = () => {
 				userJourneyImage={userJourney}
 				appScreens={LoopScreens}
 				userJourneyMobile={userJourney} />
-			{/* <Projects  /> */}
 		</PageLayout><NextProject  shouldIgnoreParentPadding={true} Project='COINMUNITEE' Route={AppRoutes.coinmunitee} /></>
 	);
 };

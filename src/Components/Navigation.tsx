@@ -1,9 +1,6 @@
 import React from 'react';
 import { Button, 
 	Flex, 
-	// HStack, 
-	// Text,
-	Box, 
 	Link,
 	useMediaQuery, 
 	Image
