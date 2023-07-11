@@ -44,6 +44,13 @@ const Project = ({images,content}:IImagesProps) => {
 
 	const animation = `${animationKeyframes} .2s ease`;
 
+	const handleClick = () => {
+		if(images.path){
+			navigate(images.path);
+		}else{
+			window.open('https://www.archibaldlondon.com/', '_blank');
+		}
+	};
 	
 	return (
 		<Flex
@@ -61,7 +68,7 @@ const Project = ({images,content}:IImagesProps) => {
 					ref={targetRef} 
 					style={{clipPath, transition: '0.5s ease'}}
 					position={'relative'}
-					onClick={()=> navigate(images.path || '')} 
+					onClick={handleClick} 
 					cursor={'pointer'}
 					_before={{
 						content:'" "',
@@ -105,7 +112,7 @@ const Project = ({images,content}:IImagesProps) => {
 					}}
 				>
 					<Image 
-						onClick={()=> navigate(images.path || '')} 
+						onClick={handleClick} 
 						objectFit={'cover'} 
 						w={['430px','100%']} 
 						h={['223px','575px']} 
@@ -134,7 +141,7 @@ const Project = ({images,content}:IImagesProps) => {
 						w={'50px'} h={'65px'}
 						p={2}
 						transform={'skewX(-10deg)'}
-						onClick={()=> navigate(images.path || '')}
+						onClick={handleClick}
 						display={['none', 'block']}
 						cursor={'pointer'}
 						transition={'all ease .3s'}
@@ -147,7 +154,7 @@ const Project = ({images,content}:IImagesProps) => {
 						alignItems={'center'}
 						display={['flex', 'none']}
 						mt={4}
-						onClick={()=> navigate(images.path || '')}
+						onClick={handleClick}
 					>
 						<Text fontSize={'14px'} color={'#E54927'}> View Project</Text>
 						<Icon 
@@ -178,7 +185,7 @@ export const SelectedWork = () => {
 				/>
 			</HStack>
 			<Project content='Open' images={images[0]} />
-			<Project content='Locked' images={images[1]} />
+			<Project content='Open' images={images[1]} />
 			<Project content='Open' images={images[2]} />
 		</Box>
 	);

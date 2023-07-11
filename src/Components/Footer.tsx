@@ -7,7 +7,11 @@ import linkedin from '../Assets/svg/linkedin.svg';
 import instagram from '../Assets/svg/instagram.svg';
 import twitter from '../Assets/svg/twitter.svg';
 
-export const Footer = () => {
+interface IFooter{
+	display: string;
+}
+
+export const Footer = ({display}:IFooter) => {
 	return(
 		<Stack
 			bg={'#0D0D11'}
@@ -18,6 +22,7 @@ export const Footer = () => {
 			py={['50px','100px']}
 			spacing={10} 
 			id='Contact'
+			display={display}
 		>
 			<Text fontSize={['14px','20px']} fontWeight={400} color={'#ABA8B1'}>WANT TO TALK ABOUT A PROJECT?</Text>
 			<Heading 

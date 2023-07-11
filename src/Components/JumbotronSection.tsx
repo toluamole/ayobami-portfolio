@@ -1,7 +1,7 @@
 import { Flex, Image, VStack, Text, Button, Stack, Link, Heading } from '@chakra-ui/react';
 import React from 'react';
 import profile from '../Assets/image/profile.png';
-import Resume from '../Assets/Ayobami-Adeolu-Resume.pdf';
+import Resume from '../Assets/Ayobami_Adeolu_Resume.pdf';
 import { MotionBox } from './SelectedWork';
 import { AnimatePresence } from 'framer-motion';
 

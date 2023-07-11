@@ -10,9 +10,8 @@ export const Home = () => {
 		<PageLayout 
 			jumbotronSection={<JumbotronSection />} 
 			backgroundColor={'#0D0D11'}
-			display={'block'}
+			display={'flex'}
 		>
-			
 			<SelectedWork  />
 			<Gallery />
 		</PageLayout>

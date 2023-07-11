@@ -19,14 +19,16 @@ interface INavigationProps{
 export const Navigation = ({display}:INavigationProps) => {
 	const [isLargerThan900] = useMediaQuery('(min-width: 900px)');
 	return (
-		<Box
+		<Flex
 			py={6}
+			w={'100%'}
+			justifyContent={'space-between'}
 			display={display}
 		>
 			<Flex 
 				justifyContent={'space-between'} 
 				alignItems='center'
-				// bg={'#ffffff'}
+				w={'100%'}
 				px={[4,'100px']}
 				h={'60px'}
 				borderRadius={'5px'}
@@ -73,6 +75,6 @@ export const Navigation = ({display}:INavigationProps) => {
 				}
 
 			</Flex>
-		</Box>
+		</Flex>
 	);
 };

@@ -61,7 +61,7 @@ export const UserExperience = ({shouldIgnoreParentPadding, userJourneyImage, use
 	return(
 		<Box>
 			<Stack 
-				{...(shouldIgnoreParentPadding  && { px:['0', '40px', null, '150px']})} 
+				{...(shouldIgnoreParentPadding  && { px:['0', '40px', null, '150px'], py:'80px'})} 
 				spacing={['30px','50px']} 
 				justifyItems={'center'} 
 				align={'center'}
@@ -108,7 +108,7 @@ export const UserExperience = ({shouldIgnoreParentPadding, userJourneyImage, use
 			<MotionBox 
 				ref={targetRef}
 				style={{clipPath, transition: '0.5s ease'}}
-				{...(shouldIgnoreParentPadding && { px: '0', })}
+				{...(shouldIgnoreParentPadding && { px: '0', pt:['0','0'] })}
 			>
 				<Image  w={'full'} src={appScreens}/>
 			</MotionBox>
