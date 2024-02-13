@@ -149,7 +149,7 @@ export const JumbotronSection = () => {
 						I have been designing digital products for the banking, hospitality, fashion, healthcare, pharmaceutical, automotive, and software industries.
 						</Text>
 						<Text w={['auto', '468px']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
-						I am based in Lagos and I have been privileged to have worked with various brands and startups worldwide as a contractor, part-time, freelancer, and full-time employee. 
+						I am based in Calgary AB and I have been privileged to have worked with various brands and startups worldwide as a contractor, part-time, freelancer, and full-time employee. 
 						Throughout my career, I have done the entire project lifecycle, from user research and user testing to creating user flows, wireframes, high fidelity designs, and prototypes.
 						</Text>
 						<Link alignSelf={'flex-start'} href={Resume} _hover={{textDecoration: 'none'}}><Button 
