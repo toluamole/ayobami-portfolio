@@ -47,7 +47,10 @@ const Project = ({images,content}:IImagesProps) => {
 	const handleClick = () => {
 		if(images.path){
 			navigate(images.path);
-		}else{
+		}if(images.path === undefined){
+			console.log('');
+		}
+		else{
 			window.open('https://www.archibaldlondon.com/', '_blank');
 		}
 	};
@@ -59,7 +62,7 @@ const Project = ({images,content}:IImagesProps) => {
 			id={'SelectedWork'}
 		>
 			<Flex 
-				w={'auto'}
+				w={'auto'} h={'auto'}
 				direction={['column','column']}
 				justifyContent='space-between'
 				
@@ -85,8 +88,8 @@ const Project = ({images,content}:IImagesProps) => {
 					_after={{
 						content: `'${content}'`,
 						// maxWidth: 'auto',
-						width:'100px',
-						height: '100px',
+						width:'150px',
+						height: '150px',
 						color:'#fff',
 						ZIndex:'1',
 						bottom:'38%',
@@ -184,9 +187,10 @@ export const SelectedWork = () => {
 					color={'#ffffff'}
 				/>
 			</HStack>
-			<Project content='Open' images={images[0]} />
+			<Project content='Coming Soon' images={images[0]} />
 			<Project content='Open' images={images[1]} />
 			<Project content='Open' images={images[2]} />
+			<Project content='Open' images={images[3]} />
 		</Box>
 	);
 };
