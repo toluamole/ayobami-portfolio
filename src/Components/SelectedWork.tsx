@@ -45,13 +45,12 @@ const Project = ({images,content}:IImagesProps) => {
 	const animation = `${animationKeyframes} .2s ease`;
 
 	const handleClick = () => {
-		if(images.path){
+		if (images.path) {
 			navigate(images.path);
-		}if(images.path === undefined){
-			console.log('');
-		}
-		else{
+		} else if (images.title === 'Archibald') {
 			window.open('https://www.archibaldlondon.com/', '_blank');
+		} else {
+			console.log('No path or external link defined for this image.');
 		}
 	};
 	
