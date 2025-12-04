@@ -1,11 +1,12 @@
 import { BsArrowDown, BsArrowRight } from 'react-icons/bs';
-import { Flex, Heading, Box, Image, chakra, Stack, Text, Icon, HStack, keyframes } from '@chakra-ui/react';
+import { Flex, Heading, Box, Image, chakra, Stack, Text, Icon, HStack } from '@chakra-ui/react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 import { images } from '../Constant/SelectedWorkConstant';
 import { ISelectedWork } from '../Types/SelectedWorks';
+import { keyframes } from '@emotion/react';
 
 export const MotionBox = motion(chakra.div);
 
@@ -118,7 +119,7 @@ const Project = ({images,content}:IImagesProps) => {
 						objectFit={'cover'} 
 						w={['430px','100%']} 
 						h={['223px','575px']} 
-						src={images.src} key={images.src}
+						src={images?.src} key={images?.src}
 					/>
 				</MotionBox>
 				<MotionBox 
@@ -129,6 +130,11 @@ const Project = ({images,content}:IImagesProps) => {
 					mb={20} mt={5}
 					justifyContent={'space-between'} 
 					alignItems={['start','center']}
+					_hover={{
+						'& .arrow-icon': {
+							transform: 'translateY(-0.5px)'
+						}
+					}}
 				>
 					<Stack direction={['row', 'column']} align={['center', 'start']}  mb={[4, 0]}>
 						<Text textDecoration={['none','underline']} fontWeight={300} fontSize={['24px','14px']} color={'#ABA8B1'}>{images.index}</Text>
@@ -147,9 +153,7 @@ const Project = ({images,content}:IImagesProps) => {
 						display={['none', 'block']}
 						cursor={'pointer'}
 						transition={'all ease .3s'}
-						_hover={{
-							transform: 'translateY(-0.5px)'
-						}}
+						className="arrow-icon"
 					/>
 					<Flex
 						justifyContent={'center'}
@@ -186,10 +190,11 @@ export const SelectedWork = () => {
 					color={'#ffffff'}
 				/>
 			</HStack>
-			<Project content='Coming Soon' images={images[0]} />
-			<Project content='Open' images={images[1]} />
-			<Project content='Open' images={images[2]} />
-			<Project content='Open' images={images[3]} />
+			<Project content='View Project' images={images[0]} />
+			<Project content='View Project' images={images[1]} />
+			<Project content='View Project' images={images[2]} />
+			<Project content='View Project' images={images[3]} />
+			<Project content='Coming Soon' images={images[4]} />
 		</Box>
 	);
 };

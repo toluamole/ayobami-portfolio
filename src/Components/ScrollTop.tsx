@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router';
+import { useLocation } from 'react-router-dom';
+
 
 interface IscrollProp{
     children: React.ReactNode;

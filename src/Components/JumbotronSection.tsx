@@ -1,4 +1,4 @@
-import { Flex, Image, VStack, Text, Button, Stack, Link, Heading } from '@chakra-ui/react';
+import { Flex, Image, VStack, Text, Button, Stack, Link, Heading, List, ListItem } from '@chakra-ui/react';
 import React from 'react';
 import profile from '../Assets/image/profile.png';
 import Resume from '../Assets/Ayobami_Adeolu_Resume.pdf';
@@ -6,153 +6,94 @@ import { MotionBox } from './SelectedWork';
 import { AnimatePresence } from 'framer-motion';
 
 export const JumbotronSection = () => {
-	const firstText= 'Digital ';
-	const secondText = 'Product Designer.';
-	const thirdText = 'Creative.';
-	const splitfirstText = Array.from(firstText);
-	const splitSecondText = Array.from(secondText);
-	const splitThirdText = Array.from(thirdText);
+	// const firstText= 'Digital ';
+	// const secondText = 'Product Designer.';
+	// const thirdText = 'Creative.';
+	// const splitfirstText = Array.from(firstText);
+	// const splitSecondText = Array.from(secondText);
+	// const splitThirdText = Array.from(thirdText);
+
+
 	
 
-	const containerVariants = {
-		hidden: {opacity: 0},
-		visible: (i = 1) => ({
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.06,
-				delayChildren: 5.5 * i
-			}
-		})
-	};
+	// const containerVariants = {
+	// 	hidden: {opacity: 0},
+	// 	visible: (i = 1) => ({
+	// 		opacity: 1,
+	// 		transition: {
+	// 			staggerChildren: 0.06,
+	// 			delayChildren: 5.5 * i
+	// 		}
+	// 	})
+	// };
 
-	const childVariants = {
-		visible: {
-			opacity: 1,
-			y: 0,
-			x: 0,
-			transition: {
-				type: 'spring',
-				damping: 12,
-				stiffness: 100
-			}
-		},
-		hidden: {
-			opacity: 0,
-			y: 5,
-			x: 10,
-			transition: {
-				type: 'spring',
-				damping: 12,
-				stiffness: 100
-			}
-		}
+	// const childVariants = {
+	// 	visible: {
+	// 		opacity: 1,
+	// 		y: 0,
+	// 		x: 0,
+	// 		transition: {
+	// 			type: 'spring',
+	// 			damping: 12,
+	// 			stiffness: 100
+	// 		}
+	// 	},
+	// 	hidden: {
+	// 		opacity: 0,
+	// 		y: 5,
+	// 		x: 10,
+	// 		transition: {
+	// 			type: 'spring',
+	// 			damping: 12,
+	// 			stiffness: 100
+	// 		}
+	// 	}
 		
-	};
+	// };
 
 
 	return (
 		<AnimatePresence exitBeforeEnter>
-			<Flex direction={'column'} justifyContent={'center'} alignItems={['start','center']}>
-				<VStack justify={'center'} align={'end'} my={['50px','80px']}>
-					<MotionBox
-						variants={containerVariants}
-						initial ={'hidden'}
-						animate={'visible'}
-						display={'flex'}
-						flexDirection={'column'}
-						justifyContent={'center'}
-						alignItems={['baseline','end']}
-						w={['100%']} px={['9px', 0]}
+			<Flex direction={'column'} justifyContent={'center'} alignItems={'start'}>
+				<VStack justify={'center'} align={'end'} my={['50px','80px']} pl={[3, 0]}>
+					<Heading 
+						// key={index} 
+						fontSize={['30px','70px']} 
+						fontWeight={500} 
+						color={'white'} 
 					>
-						<Flex direction={['column', 'row']}>
-							<Flex  >
-								{
-									splitfirstText.map((word, index) => {
-										return(
-											<MotionBox
-												key={index}
-												variants={childVariants}
-											>
-												<Heading 
-													key={index} 
-													fontSize={['30px','70px']} 
-													fontWeight={500} 
-													color={'white'} 
-												>
-													{word === ' ' ? '\u00A0' : word}
-												</Heading>
-											</MotionBox>
-										);
-									})
-								}
-							</Flex>
-
-							<Flex >
-								{
-									splitSecondText.map((word, index) => {
-										return(
-											<MotionBox
-												key={index}
-												variants={childVariants}
-											>
-												<Heading 
-													key={index} 
-													fontSize={['30px','70px']} 
-													fontWeight={500} 
-													color={'white'} 
-												>
-													{word === ' ' ? '\u00A0' : word}
-												</Heading>
-											</MotionBox>
-										);
-									})
-								}
-							</Flex>
-						</Flex>
-
-						<Flex>
-							{
-								splitThirdText.map((word, index) => {
-									return(
-										<MotionBox
-											variants={childVariants}
-											key={index}
-										>
-											<Heading 
-												key={index} 
-												// alignSelf={'flex-end'} 
-												fontSize={['30px','70px']} 
-												fontWeight={500} 
-												color={'white'}
-											> 
-												{word}
-											</Heading>
-										</MotionBox>
-									);
-								})
-							}
-						</Flex>
-					</MotionBox>
-					
+						
+						Product designer transforming complex ideas into clear, engaging experiences
+					</Heading>
 					
 				</VStack>
-				<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 4]} pb={'150px'}>
+				<Stack direction={['column', null, null, 'row']} spacing={[10,20]} px={[3, 0]} pb={'150px'}>
 					<Image 
 						cursor={'pointer'} 
 						boxSize={'100%'} 
 						objectFit="cover"
-						w={['370px','550px']} h={['290px','523px']} 
+						w={['370px','500px']} h={['290px','500px']} 
 						src={profile} 
 					/>
-					<VStack spacing={6} pt={[0,6]}>
-						<Text w={['auto', '468px']} color={'#ABA8B1'} fontSize={['14px','18px']}> Hi, I am Ayobami Adeolu a digital product designer and a creative with over 4 years of experience. 
-						I have been designing digital products for the banking, hospitality, fashion, healthcare, pharmaceutical, automotive, and software industries.
+					<VStack spacing={6} pt={0}>
+						<Text w={['auto', 'auto']} color={'#ABA8B1'} fontSize={['14px','18px']}> 
+							I am a Product & UX Designer focused on building high-impact digital products that improve user experience and drive measurable business results.
+							With over 6 years of designing across banking, hospitality, fintech, fashion, healthcare, and SaaS, 
+							I’ve helped teams launch features and products that improved user engagement, reduced friction, and strengthened conversion across multiple touchpoints.
 						</Text>
-						<Text w={['auto', '468px']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
-						I am based in Calgary AB and I have been privileged to have worked with various brands and startups worldwide as a contractor, part-time, freelancer, and full-time employee. 
-						Throughout my career, I have done the entire project lifecycle, from user research and user testing to creating user flows, wireframes, high fidelity designs, and prototypes.
+						
+						<Text w={['auto', 'auto']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
+							Throughout my career, I’ve worked with global brands and startups—leading or contributing to end-to-end design workflows that include research, usability testing, UX strategy, interaction design, and high-fidelity product execution. 
+							This work has improved task completion rates through clearer user flows, reduced onboarding time by redesigning key product experiences, increased engagement with more intuitive interaction patterns and design systems, and accelerated development cycles through componentized, dev-ready design documentation.
 						</Text>
-						<Link alignSelf={'flex-start'} href={Resume} _hover={{textDecoration: 'none'}}><Button 
+						<Text w={['auto', 'auto']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
+							I’m based in Canada and my portfolio reflects a mix of product redesigns, 0→1 experiences, Design systems, system improvements, and strategic UX contributions that have helped teams ship more confidently.
+						</Text>
+						<Text w={['auto', 'auto']}  color={'#ABA8B1'} fontSize={['14px','18px']}>
+							My approach is simple: understand the problem, design with intention, validate with users, and deliver work that creates measurable value for both the business and the people using the product.
+						</Text>
+						
+						<Link alignSelf={'flex-start'} href={Resume} pt={7} _hover={{textDecoration: 'none'}}><Button 
 							bg={'transparent'}
 							border={'0.5px solid #D9D9D9 '} 
 							color={'#C4C4C4'}  w={['200px','250px']} h={['40px','50px']} 

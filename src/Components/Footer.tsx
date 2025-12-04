@@ -35,8 +35,8 @@ export const Footer = ({display}:IFooter) => {
 				onClick={() => window.location.href = 'mailto:sojiadeolu1@gmail.com'}>
 					
 			LET&apos;S CONNECT!</Heading>
-			<Text w={['100%','760px']} fontWeight={300} fontSize={['14px','16px']} color={'#fff'} textAlign={'center'} pb={['10px','50px']}>I work at the intersection of brand and product, bringing a heavy sense of graphic design to my digital work. 
-                Currently based in Calgary AB and open for remote, contract, and freelance opportunities.
+			<Text w={['100%','760px']} fontWeight={300} fontSize={['14px','16px']} color={'#fff'} textAlign={'center'} pb={['10px','50px']}>
+				I blend brand and product thinking with a strong graphic design influence to create refined digital experiences. I’m currently in Canada and open to remote, contract, and freelance opportunities.
 			</Text>
 			<Stack direction={ 'row'} justify={'center'} align={['center', 'center']}  spacing={['20px','40px']}>
 				<Link as={RLink} target={'_blank'} to='https://www.behance.net/emmacreative'  color={'#fff'} p={[2,3]} border={'0.25px solid #D3D3D3'} borderRadius={'50%'}><Image w={['16px','20px']} h={['16px','20px']}  src={behance} /></Link>
@@ -56,7 +56,7 @@ export const Footer = ({display}:IFooter) => {
 				
 				// onClick={() => window.location.href = 'mailto:amoletoluwanimi@gmail.com'}
 			>
-				Site designed by <chakra.span color={'#E54927'}>Me</chakra.span> and developed by <chakra.span _hover={{ textDecoration:'underline' }} color={'#E54927'}>Toluwanimi Amole</chakra.span> 
+				Site designed & developed by <chakra.span color={'#E54927'}>Toluwanimi</chakra.span> and  <chakra.span _hover={{ textDecoration:'underline' }} color={'#E54927'}>Ayobami</chakra.span> 
 			</Text>
 		</Stack>
 	);
