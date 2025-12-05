@@ -40,7 +40,7 @@ export const Footer = ({display}:IFooter) => {
 			</Text>
 			<Stack direction={ 'row'} justify={'center'} align={['center', 'center']}  spacing={['20px','40px']}>
 				<Link as={RLink} target={'_blank'} to='https://www.behance.net/emmacreative'  color={'#fff'} p={[2,3]} border={'0.25px solid #D3D3D3'} borderRadius={'50%'}><Image w={['16px','20px']} h={['16px','20px']}  src={behance} /></Link>
-				<Link as={RLink}  target={'_blank'} to='https://dribbble.com/emmacreative'  color={'#fff'} border={'0.25px solid #D3D3D3'} borderRadius={'50%'} p={[2,3]} ><Image w={['16px','20px']} h={['16px','20px']}  src={dribbble}/></Link>
+				<Link as={RLink}  target={'_blank'} to='https://dribbble.com/ayoadeolu'  color={'#fff'} border={'0.25px solid #D3D3D3'} borderRadius={'50%'} p={[2,3]} ><Image w={['16px','20px']} h={['16px','20px']}  src={dribbble}/></Link>
 				<Link as={RLink} target={'_blank'} to='https://www.instagram.com/_adeolus/'  color={'#fff'} p={[2,3]} border={'0.25px solid #D3D3D3'} borderRadius={'50%'}><Image w={['16px','20px']} h={['16px','20px']}  src={instagram}/></Link>
 				<Link as={RLink} target={'_blank'} to='https://www.linkedin.com/in/ayobami-adeolu/'  color={'#fff'} p={[2,3]} border={'0.25px solid #D3D3D3'} borderRadius={'50%'}><Image w={['16px','20px']} h={['16px','20px']}  src={linkedin}/></Link>
 				<Link as={RLink} target={'_blank'} to='https://www.twitter.com/_adeolus/'  color={'#fff'}  p={[2,3]} border={'0.25px solid #D3D3D3'} borderRadius={'50%'} ><Image w={['16px','20px']} h={['16px','20px']} src={twitter}/></Link>
